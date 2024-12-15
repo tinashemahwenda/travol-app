@@ -14,7 +14,7 @@ class HomePage extends StatelessWidget {
             height: 20,
           ),
           Padding(
-            padding: const EdgeInsets.all(20.0),
+            padding: const EdgeInsets.only(top: 20.0, left: 20.0, right: 20.0),
             child: Text(
               'Discover new \nExperience',
               style: TextStyle(
@@ -24,12 +24,13 @@ class HomePage extends StatelessWidget {
             ),
           ),
           Container(
-            padding: EdgeInsets.all(40),
+            padding: EdgeInsets.fromLTRB(20, 20, 20, 20),
             decoration: BoxDecoration(),
             child: TextField(
-              decoration: InputDecoration(border: OutlineInputBorder()),
+              decoration: InputDecoration(
+                  border: OutlineInputBorder(), hintText: 'Search places'),
             ),
-          )
+          ),
         ],
       ),
     ));
