@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:travol_app/widgets/textHeader.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -30,6 +31,66 @@ class HomePage extends StatelessWidget {
               decoration: InputDecoration(
                   border: OutlineInputBorder(), hintText: 'Search places'),
             ),
+          ),
+          SubHeading(
+            title: 'Top Places',
+          ),
+          SingleChildScrollView(
+            scrollDirection: Axis.horizontal,
+            child: Row(
+              children: [
+                Padding(
+                  padding: const EdgeInsets.fromLTRB(20, 0, 0, 0),
+                  child: Container(
+                    width: 200,
+                    height: 250,
+                    decoration: BoxDecoration(
+                      color: Colors.grey[400],
+                      borderRadius: BorderRadius.circular(20),
+                    ),
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.fromLTRB(20, 0, 5, 0),
+                  child: Container(
+                    width: 200,
+                    height: 250,
+                    decoration: BoxDecoration(
+                      color: Colors.grey[400],
+                      borderRadius: BorderRadius.circular(20),
+                    ),
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.fromLTRB(20, 0, 5, 0),
+                  child: Container(
+                    width: 200,
+                    height: 250,
+                    decoration: BoxDecoration(
+                      color: Colors.grey[400],
+                      borderRadius: BorderRadius.circular(20),
+                    ),
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.fromLTRB(20, 0, 5, 0),
+                  child: Container(
+                    width: 200,
+                    height: 250,
+                    decoration: BoxDecoration(
+                      color: Colors.grey[400],
+                      borderRadius: BorderRadius.circular(20),
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ),
+          SizedBox(
+            height: 20,
+          ),
+          SubHeading(
+            title: 'Top Countries',
           ),
         ],
       ),
