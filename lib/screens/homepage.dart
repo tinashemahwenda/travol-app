@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:travol_app/widgets/countriesBubble.dart';
+import 'package:travol_app/widgets/placesCard.dart';
 import 'package:travol_app/widgets/textHeader.dart';
 
 class HomePage extends StatelessWidget {
@@ -41,48 +42,24 @@ class HomePage extends StatelessWidget {
             child: Row(
               children: [
                 Padding(
-                  padding: const EdgeInsets.fromLTRB(20, 0, 0, 0),
-                  child: Container(
-                    width: 200,
-                    height: 250,
-                    decoration: BoxDecoration(
-                      color: Colors.grey[400],
+                  padding: const EdgeInsets.only(left: 20.0),
+                  child: ClipRRect(
                       borderRadius: BorderRadius.circular(20),
-                    ),
-                  ),
+                      child: PlacesCard(
+                        placeName: 'Skyline Hotel',
+                        placeLocation: 'Nyanga, Zimbabwe',
+                        imageLocation: 'assets/images/bg-images_1.png',
+                      )),
                 ),
                 Padding(
-                  padding: const EdgeInsets.fromLTRB(20, 0, 5, 0),
-                  child: Container(
-                    width: 200,
-                    height: 250,
-                    decoration: BoxDecoration(
-                      color: Colors.grey[400],
+                  padding: const EdgeInsets.only(left: 20.0),
+                  child: ClipRRect(
                       borderRadius: BorderRadius.circular(20),
-                    ),
-                  ),
-                ),
-                Padding(
-                  padding: const EdgeInsets.fromLTRB(20, 0, 5, 0),
-                  child: Container(
-                    width: 200,
-                    height: 250,
-                    decoration: BoxDecoration(
-                      color: Colors.grey[400],
-                      borderRadius: BorderRadius.circular(20),
-                    ),
-                  ),
-                ),
-                Padding(
-                  padding: const EdgeInsets.fromLTRB(20, 0, 5, 0),
-                  child: Container(
-                    width: 200,
-                    height: 250,
-                    decoration: BoxDecoration(
-                      color: Colors.grey[400],
-                      borderRadius: BorderRadius.circular(20),
-                    ),
-                  ),
+                      child: PlacesCard(
+                        placeName: 'Umfuridzi',
+                        placeLocation: 'Madziva, Zimbabwe',
+                        imageLocation: 'assets/images/bg-images_2.png',
+                      )),
                 ),
               ],
             ),
