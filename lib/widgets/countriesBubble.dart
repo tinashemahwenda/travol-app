@@ -18,6 +18,7 @@ class CountriesBubble extends StatelessWidget {
               color: Colors.grey[400],
               borderRadius: BorderRadius.circular(50),
             ),
+            child: Image.asset('assets/images/mountains.png'),
           ),
           SizedBox(
             height: 10,
