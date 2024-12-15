@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
 
 class CountriesBubble extends StatelessWidget {
-  const CountriesBubble({super.key});
+  final String country_name;
+  const CountriesBubble({super.key, required this.country_name});
 
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.fromLTRB(20.0, 0, 10, 0),
+      padding: const EdgeInsets.fromLTRB(20.0, 0, 0, 0),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
@@ -22,7 +23,7 @@ class CountriesBubble extends StatelessWidget {
             height: 10,
           ),
           Text(
-            'Zimbabwe',
+            country_name,
             style: TextStyle(
               fontSize: 12,
             ),

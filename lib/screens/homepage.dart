@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:travol_app/widgets/countriesBubble.dart';
 import 'package:travol_app/widgets/textHeader.dart';
 
 class HomePage extends StatelessWidget {
@@ -92,28 +93,25 @@ class HomePage extends StatelessWidget {
           SubHeading(
             title: 'Top Countries',
           ),
-          Padding(
-            padding: const EdgeInsets.fromLTRB(20.0, 0, 10, 0),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.center,
+          SingleChildScrollView(
+            scrollDirection: Axis.horizontal,
+            child: Row(
               children: [
-                Container(
-                  width: 100,
-                  height: 100,
-                  decoration: BoxDecoration(
-                    color: Colors.grey[400],
-                    borderRadius: BorderRadius.circular(50),
-                  ),
+                CountriesBubble(
+                  country_name: 'Zimbabwe',
                 ),
-                SizedBox(
-                  height: 10,
+                CountriesBubble(
+                  country_name: 'Rwanda',
                 ),
-                Text(
-                  'Zimbabwe',
-                  style: TextStyle(
-                    fontSize: 12,
-                  ),
-                )
+                CountriesBubble(
+                  country_name: 'South Africa',
+                ),
+                CountriesBubble(
+                  country_name: 'Zambia',
+                ),
+                CountriesBubble(
+                  country_name: 'Namibia',
+                ),
               ],
             ),
           )
